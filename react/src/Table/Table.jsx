@@ -8,3 +8,5 @@ const Table = () =>
     const colView = () =>
         
 }
+
+export default Table;
