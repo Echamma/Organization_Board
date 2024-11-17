@@ -1,1 +1,45 @@
-{"projects":[{"project1":{"name":"trash","items":[{"title":"em","desc":"lorem desc","done":true},{"title":"lorem","desc":"lorem desc","done":false},{"title":"rem","desc":"lorem desc","done":false}]},"project2":{"name":"nottrash","items":[{"title":"em","desc":"lorem desc","done":true},{"title":"lorem","desc":"lorem desc","done":false},{"title":"rem","desc":"lorem desc","done":false}]}}]}
+{
+    "projects": [
+        {
+                "name": "trash",
+                "items": [
+                    {
+                        "title": "em",
+                        "desc": "lorem desc",
+                        "done": true
+                    },
+                    {
+                        "title": "lorem",
+                        "desc": "lorem desc",
+                        "done": false
+                    },
+                    {
+                        "title": "rem",
+                        "desc": "lorem desc",
+                        "done": false
+                    }
+                ]
+            },
+            {
+                "name": "nottrash",
+                "items": [
+                    {
+                        "title": "em",
+                        "desc": "lorem desc",
+                        "done": true
+                    },
+                    {
+                        "title": "lorem",
+                        "desc": "lorem desc",
+                        "done": false
+                    },
+                    {
+                        "title": "rem",
+                        "desc": "lorem desc",
+                        "done": false
+                    }
+                ]
+            }
+        
+    ]
+}

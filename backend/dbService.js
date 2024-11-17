@@ -1,4 +1,4 @@
-import Item from './item';
+const Item = require('./item');
 const fs = require('fs');
 
 const getProjectNames = (data) => {
@@ -91,9 +91,9 @@ const updateProject = (data, oldName, newName) => {
 };
 
 const deleteProject = (data, projectName) => {
-    data.projects = data.projects.filter(project => {
-        return !Object.values(project).some(projectInfo => projectInfo.name === projectName);
-    });
+
+    data.projects = data.projects.filter(project => project.name != projectName);
+    console.log(data.projects);
 };
 
 const saveData = (data) => {
@@ -104,18 +104,19 @@ const saveData = (data) => {
 const dataGetter = fs.readFileSync('./backend/db.json');
 const potato = JSON.parse(dataGetter);
 
-// Updating an item
-updateItem(potato, "trash", "new task", "updated task", "updated description");
-saveData(potato);
+// // Updating an item
+// updateItem(potato, "trash", "new task", "updated task", "updated description");
+// saveData(potato);
 
-// Deleting an item
-deleteItem(potato, "trash", "rem");
-saveData(potato);
+// // Deleting an item
+// deleteItem(potato, "trash", "rem");
+// saveData(potato);
 
-// Updating a project
-updateProject(potato, "trash", "updated trash");
-saveData(potato);
+// // Updating a project
+// updateProject(potato, "trash", "updated trash");
+// saveData(potato);
 
 // Deleting a project
-deleteProject(potato, "nottrash");
+deleteProject(potato, "trash");
 saveData(potato);
+
